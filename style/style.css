@@ -15,6 +15,19 @@
   text-shadow: 0 0 4px #000;
 }
 
+html::-webkit-scrollbar {
+  width: 6px;
+}
+
+html::-webkit-scrollbar-track {
+  background: darkgray;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #5e6b76;
+  border-radius: 10px;
+}
+
 a {
   text-decoration: none;
 }
@@ -29,7 +42,7 @@ header {
 }
 
 header .top {
-  height: 470px;
+  height: 938px;
 }
 
 header .logo_menu {
@@ -145,7 +158,6 @@ header #btn_top:hover {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  top: -65px;
   height: 360px;
   width: 25%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -165,5 +177,92 @@ header #btn_top:hover {
   background-image: url(/img/blc01.jpg);
   background-position: center;
   background-size: cover;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 120px;
+  padding: 10px;
+}
+
+.sec_blog {
+  background-image: url("/img/blc03.jpg");
+  background-position: center;
+  background-size: cover;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.sec_blog h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 90px;
+}
+
+.sec_blog .sec_card1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  height: 217px;
+  width: 15%;
+  background-color: #5e6b76;
+  -webkit-box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+  border-radius: 45px 174px;
+  cursor: copy;
+}
+
+.sec_blog .sec_card1:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sec_blog #sec_03 {
+  background-image: url(/img/github.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 64%;
+}
+
+.sec_blog #sec_04 {
+  background-image: url(/img/stack-overflow.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 50%;
 }
 /*# sourceMappingURL=style.css.map */
